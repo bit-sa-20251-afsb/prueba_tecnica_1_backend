@@ -21,6 +21,16 @@ describe("Test de la calculadora", () => {
         expect(result).toBe(3);
     })
 
+    it('Hacer compra en la tienda', ()=>{
+        // Arrange
+        let plata = 10000;
+        let precio_compra = 2000;
+        // Act
+        let resultado_compra = plata - precio_compra;
+        // Assert
+        expect(resultado_compra).toBe(8000);
+    })
+
     it('Operacion multiplicacion', ()=>{
         // Act
         let result = number1 * number2;
